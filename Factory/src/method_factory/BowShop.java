@@ -1,9 +1,9 @@
-package method;
+package method_factory;
 
-import product.Weapon;
-import product.kirin.KirinBow;
-import product.rathalos.RathalosBow;
-import product.teostra.TeostraBow;
+import method_factory.product.Weapon;
+import method_factory.product.kirin.KirinBow;
+import method_factory.product.rathalos.RathalosBow;
+import method_factory.product.teostra.TeostraBow;
 
 public class BowShop extends WeaponShop {
 

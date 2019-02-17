@@ -1,9 +1,9 @@
 package simple;
 
-import product.Bow;
-import product.GreatSword;
-import product.LongSword;
-import product.Weapon;
+import method_factory.product.Bow;
+import method_factory.product.GreatSword;
+import method_factory.product.LongSword;
+import method_factory.product.Weapon;
 
 public class SimpleWeaponShop {
 

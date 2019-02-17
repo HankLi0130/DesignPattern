@@ -1,6 +1,6 @@
-package product.rathalos;
+package method_factory.product.rathalos;
 
-import product.Weapon;
+import method_factory.product.Weapon;
 
 /**
  * 火龍大劍

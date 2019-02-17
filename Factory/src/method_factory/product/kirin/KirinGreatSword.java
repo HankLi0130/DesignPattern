@@ -1,6 +1,6 @@
-package product.kirin;
+package method_factory.product.kirin;
 
-import product.Weapon;
+import method_factory.product.Weapon;
 
 /**
  * 麒麟大劍

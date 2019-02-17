@@ -1,6 +1,6 @@
-package method;
+package method_factory;
 
-import product.Weapon;
+import method_factory.product.Weapon;
 
 public abstract class WeaponShop {
 

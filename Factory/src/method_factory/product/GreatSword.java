@@ -1,4 +1,4 @@
-package product;
+package method_factory.product;
 
 /**
  * 大劍

@@ -1,6 +1,6 @@
-package product.teostra;
+package method_factory.product.teostra;
 
-import product.Weapon;
+import method_factory.product.Weapon;
 
 /**
  * 炎王龍弓

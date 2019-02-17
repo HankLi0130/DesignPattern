@@ -1,9 +1,9 @@
-package method;
+package method_factory;
 
-import product.Weapon;
-import product.kirin.KirinLongSword;
-import product.rathalos.RathalosLongSword;
-import product.teostra.TeostraLongSword;
+import method_factory.product.Weapon;
+import method_factory.product.kirin.KirinLongSword;
+import method_factory.product.rathalos.RathalosLongSword;
+import method_factory.product.teostra.TeostraLongSword;
 
 public class LongSwordShop extends WeaponShop {
 
