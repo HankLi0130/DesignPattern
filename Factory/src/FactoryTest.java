@@ -1,16 +1,33 @@
-import abstract_factory.HeightPropertyFactory;
-import abstract_factory.PropertyFactory;
-import abstract_factory.PropertyWeapon;
-import method_factory.PropertyBowShop;
-import method_factory.PropertyWeaponShop;
+import method_factory.product.Weapon;
+import simple.SimpleWeaponShop;
 
 public class FactoryTest {
 
     public static void main(String[] args) {
 
-        // Simple
-//        Weapon weapon = SimpleWeaponShop.getWeapon("太刀");
+        // example
+//        String weaponName = "大劍";
+//
+//        Weapon weapon = null;
+//
+//        switch (weaponName) {
+//            case "大劍":
+//                weapon = new GreatSword();
+//                break;
+//            case "太刀":
+//                weapon = new LongSword();
+//                break;
+//            case "弓":
+//                weapon = new Bow();
+//                break;
+//        }
+//        weapon.build();
 //        weapon.attack();
+
+
+        // Simple
+        Weapon weapon = SimpleWeaponShop.getWeapon("太刀");
+        weapon.attack();
 
         // Factory Method
 //        WeaponShop weaponShop = new GreatSwordShop();
@@ -24,9 +41,9 @@ public class FactoryTest {
 //        propertyWeapon.attack();
 
         // Abstract Factory Into Factory Method
-        PropertyFactory propertyFactory = new HeightPropertyFactory();
-        PropertyWeaponShop weaponShop = new PropertyBowShop(propertyFactory);
-        PropertyWeapon propertyWeapon = weaponShop.getWeapon("麒麟");
-        propertyWeapon.attack();
+//        PropertyFactory propertyFactory = new HeightPropertyFactory();
+//        PropertyWeaponShop weaponShop = new PropertyBowShop(propertyFactory);
+//        PropertyWeapon propertyWeapon = weaponShop.getWeapon("麒麟");
+//        propertyWeapon.attack();
     }
 }
