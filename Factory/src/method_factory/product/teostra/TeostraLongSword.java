@@ -1,11 +1,11 @@
 package method_factory.product.teostra;
 
-import method_factory.product.Weapon;
+import method_factory.product.LongSword;
 
 /**
  * 炎王龍太刀
  */
-public class TeostraLongSword implements Weapon {
+public class TeostraLongSword extends LongSword {
 
     @Override
     public void build() {

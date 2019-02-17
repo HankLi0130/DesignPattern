@@ -1,11 +1,11 @@
 package method_factory.product.kirin;
 
-import method_factory.product.Weapon;
+import method_factory.product.GreatSword;
 
 /**
  * 麒麟大劍
  */
-public class KirinGreatSword implements Weapon {
+public class KirinGreatSword extends GreatSword {
 
     @Override
     public void build() {

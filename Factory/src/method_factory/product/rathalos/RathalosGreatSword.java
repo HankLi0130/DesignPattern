@@ -1,11 +1,11 @@
 package method_factory.product.rathalos;
 
-import method_factory.product.Weapon;
+import method_factory.product.GreatSword;
 
 /**
  * 火龍大劍
  */
-public class RathalosGreatSword implements Weapon {
+public class RathalosGreatSword extends GreatSword {
 
     @Override
     public void build() {

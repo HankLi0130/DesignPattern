@@ -1,5 +1,6 @@
+import method_factory.BowShop;
+import method_factory.WeaponShop;
 import method_factory.product.Weapon;
-import simple.SimpleWeaponShop;
 
 public class FactoryTest {
 
@@ -26,13 +27,13 @@ public class FactoryTest {
 
 
         // Simple
-        Weapon weapon = SimpleWeaponShop.getWeapon("太刀");
-        weapon.attack();
+//        Weapon weapon = SimpleWeaponShop.getWeapon("太刀");
+//        weapon.attack();
 
         // Factory Method
-//        WeaponShop weaponShop = new GreatSwordShop();
-//        Weapon weapon = weaponShop.getWeapon("炎王龍");
-//        weapon.attack();
+        WeaponShop weaponShop = new BowShop();
+        Weapon weapon = weaponShop.getWeapon("麒麟");
+        weapon.attack();
 
         // Abstract Factory
 //        PropertyFactory propertyFactory = new HeightPropertyFactory();
