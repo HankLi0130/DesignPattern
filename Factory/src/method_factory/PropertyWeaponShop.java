@@ -1,6 +1,6 @@
 package method_factory;
 
-import abstract_factory.PropertyWeapon;
+import abstract_factory.product.PropertyWeapon;
 
 public abstract class PropertyWeaponShop {
 

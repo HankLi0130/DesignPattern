@@ -1,4 +1,4 @@
-package abstract_factory;
+package abstract_factory.product;
 
 import abstract_factory.product.color.Color;
 import abstract_factory.product.jewel.Jewel;

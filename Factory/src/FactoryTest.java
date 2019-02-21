@@ -1,6 +1,8 @@
-import method_factory.BowShop;
-import method_factory.WeaponShop;
-import method_factory.product.Weapon;
+import abstract_factory.HeightPropertyFactory;
+import abstract_factory.PropertyFactory;
+import abstract_factory.product.PropertyWeapon;
+import method_factory.PropertyBowShop;
+import method_factory.PropertyWeaponShop;
 
 public class FactoryTest {
 
@@ -31,20 +33,20 @@ public class FactoryTest {
 //        weapon.attack();
 
         // Factory Method
-        WeaponShop weaponShop = new BowShop();
-        Weapon weapon = weaponShop.getWeapon("麒麟");
-        weapon.attack();
+//        WeaponShop weaponShop = new GreatSwordShop();
+//        Weapon weapon = weaponShop.getWeapon("火龍");
+//        weapon.attack();
 
         // Abstract Factory
-//        PropertyFactory propertyFactory = new HeightPropertyFactory();
+//        PropertyFactory propertyFactory = new LowPropertyFactory();
 //        PropertyWeapon propertyWeapon = new KirinPropertyBow(propertyFactory);
 //        propertyWeapon.build();
 //        propertyWeapon.attack();
 
         // Abstract Factory Into Factory Method
-//        PropertyFactory propertyFactory = new HeightPropertyFactory();
-//        PropertyWeaponShop weaponShop = new PropertyBowShop(propertyFactory);
-//        PropertyWeapon propertyWeapon = weaponShop.getWeapon("麒麟");
-//        propertyWeapon.attack();
+        PropertyFactory propertyFactory = new HeightPropertyFactory();
+        PropertyWeaponShop weaponShop = new PropertyBowShop(propertyFactory);
+        PropertyWeapon propertyWeapon = weaponShop.getWeapon("火龍");
+        propertyWeapon.attack();
     }
 }
