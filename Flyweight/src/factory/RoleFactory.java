@@ -10,7 +10,7 @@ import java.util.HashMap;
 public class RoleFactory {
 
     // Cache
-    private static HashMap<String, Role> roleMap = new HashMap<String, Role>();
+    private static HashMap<String, Role> roleMap = new HashMap<>();
 
     public static Role createRole(Type type) {
 
