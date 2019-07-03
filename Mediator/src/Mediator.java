@@ -1,31 +1,24 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Mediator {
 
-    private boolean slotFull = false;
-    private int number;
+    private List<Plane> planes = new ArrayList<>();
 
-    public synchronized void storeMessage(int num) {
-        while (slotFull == true) {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-            }
-        }
-        slotFull = true;
-        number = num;
-        notifyAll();
+    void registeredPlane(Plane plane) {
+        planes.add(plane);
     }
 
-    public synchronized int retrieveMessage() {
-        while (slotFull == false) {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
+    void sendMessage(Plane plane, String message) {
+
+        message = "注意！！ " + message;
+
+        if (plane == null) {
+            for (Plane p : planes) {
+                p.receiveMessage(message);
             }
+        } else {
+            plane.receiveMessage(message);
         }
-        slotFull = false;
-        notifyAll();
-        return number;
     }
 }
