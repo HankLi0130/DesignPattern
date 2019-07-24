@@ -32,3 +32,7 @@ There are abstract factory, factory method, simple factory in the sample code.
 
 [Google Slide](https://drive.google.com/open?id=1wsU-ys_7_CsVPo1Anhv4Musw0T8912MozW1YGgVEB8E)
 
+### Memento
+
+[Google Slide](https://drive.google.com/open?id=1MFqVc6XDnypUUHghBagMdozjva9qjNvl7tgs539IT3c)
+
