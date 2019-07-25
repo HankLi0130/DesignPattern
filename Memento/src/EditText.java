@@ -30,7 +30,7 @@ public class EditText {
         this.backgroundColor = backgroundColor;
     }
 
-    // Memeto
+    // Mememto
     public Memento save() {
         return new Memento(text, textColor, backgroundColor);
     }
