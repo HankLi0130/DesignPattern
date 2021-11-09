@@ -3,8 +3,10 @@ public class RealBlock implements Block {
 
     public RealBlock() throws InterruptedException {
         // 耗時作業，例如：取得網路資源
+        System.out.println("--作業啟動--");
+        System.out.println("--等待完成--");
         Thread.sleep(1000);
-        System.out.println("-- 作業完成 --");
+        System.out.println("--作業完成 --");
     }
 
     @Override
