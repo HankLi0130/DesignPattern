@@ -2,7 +2,7 @@ import java.util.*;
 
 public class ListViewAdapter implements List<String> {
 
-    private final Map<Integer, String> items;
+    private Map<Integer, String> items;
 
     public ListViewAdapter(Map<Integer, String> items) {
         this.items = items;
